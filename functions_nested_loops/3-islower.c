@@ -1,19 +1,20 @@
-#include "main.h"
+/*
+ * File: 3-islower.c
+ * Auth: Brennan D Baraban
+ */
+
+#include "holberton.h"
 
 /**
- * print_alphabet_x10 function uses _putchar function to print
- * alphabet in lowercase 10 times
+ * _islower - Checks if a character is lowercase.
+ * @c: The character to be checked.
+ *
+ * Return: 1 if character is lowercase, 0 otherwise.
  */
 int _islower(int c)
 {
-	char i;
-	int islower = 0;
-
-	for (i = 'a'; i <= 'z'; i++)
-	{
-		if (i == c)
-			islower = 1;
-	}
-
-	return (islower);
+	if (c >= 'a' && c <= 'z')
+		return (1);
+	else
+		return (0);
 }
